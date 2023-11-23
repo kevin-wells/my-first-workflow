@@ -27,3 +27,6 @@ jobs:
         run: |
           echo "The repository ${{ github.repository }} contains the following files:"
           tree
+
+      - run: echo 'always'
+        if: always()
