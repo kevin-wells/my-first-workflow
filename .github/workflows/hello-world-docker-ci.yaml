@@ -14,6 +14,7 @@ jobs:
       - name: List files in the repository
         run: |
           echo "The repository ${{ github.repository }} contains the following files:"
+          pwd
           tree
       - name: Run my own container action
         id: hello-action
